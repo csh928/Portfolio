@@ -5,8 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style type="text/css">
+        html, body {width:100%; margin:0; padding:0;}
+
+        body {background-color:#ffffff; position:relative; min-width:320px;}
+
+        body, th, td, p, input, button, textarea, select, div, xmp { font-family:'Jost'; color:#000000; line-height:100%;}
+
+        img {border:none;}
+
+        a, input, textarea, select {outline:none; -webkit-appearance: none; -moz-appearance: none; border-radius:0;}
+
+        dfn {display:none;}    
+
+        ul, ol, dl {padding:0; margin:0;}
+        li, dt, dd {padding:0; margin:0; list-style:none;}
+        li         {float:left;}
+
+        div, p, span, input, select, textarea, a, ul, li, dd, dt, dl { 
+            box-sizing: border-box !important; 
+            -webkit-box-sizing: border-box !important;
+            -moz-box-sizing: border-box !important;
+        }
+
+
+        select {-webkit-appearance: none; -moz-appearance:none; appearance:none;}
+        select::-ms-expand { display:none; }
+
+        .clear { clear:both; }
+
+        .bg_layer { position: fixed; top: 0; left: 0; background-color: #000000; opacity: 0.8; filter: alpha(opacity=80); -ms-filter: alpha(opacity=80); z-index: 99999; }
+        .outDiv { width:100%; }
+        .outDiv.First { background-color: pink; }
+        .outDiv.Second { background-color:white;}
+        .outDiv.Third { background-color: lightskyblue; }
+        .outDiv .InDiv { width:1200px; margin:0 auto; }
+        .outDiv .InDiv .TopMenu { width:100%; }
+        .outDiv .InDiv .TopMenu .MLeft { width:200px; padding:40px 0 0 5px; float:left; font-weight:bold; }
+        .outDiv .InDiv .TopMenu .MRight { float:right; }
+        .outDiv .InDiv .TopMenu .MRight li { padding:40px 5px 0 5px; margin-left:20px; }
+        .outDiv .InDiv .TopMenu .MRight li.LiSelected { background-color: lightsalmon; }    
+
+        .outDiv .InDiv .Title { text-align:right; padding:100px; }
+        .outDiv .InDiv .Title .S { margin-bottom:14px; }
+        .outDiv .InDiv .Title .M { font-size:60px; }
+        .outDiv .InDiv .Title .L { font-weight:600; font-size:60px; }                
+        .btn_top { background-color:black; width:20px; height:20px; position: fixed; bottom:40px; right:40px; }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //$(".bg_layer").css("width", window.innerWidth);
+            //$(".bg_layer").css("height", window.innerHeight);
+        });
+    </script>
 </head>
 <body>
-    <h1>첫 깃허브페이지입니다아아아먼;이럼ㄴ이ㅏ러;미나어리</h1>
+    <div class="bg_layer"></div>
+    <div class="outDiv First">
+        <div class="InDiv">
+            <div class="TopMenu">
+                <div class="MLeft">
+                    PORTFOLIO
+                </div>
+                <div class="MRight">
+                    <ul>
+                        <li class="LiSelected">Home</li>
+                        <li>About me</li>
+                        <li>Ability</li>
+                        <li>Portfolio</li>
+                        <li>Contact</li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="Title">
+                <div class="S">UX/UI Designer & Publisher</div>
+                <div class="M">MY</div>
+                <div class="L">PORTFOLIO</div>
+            </div>
+        </div>
+    </div>
+    <div class="outDiv Second">
+        <div class="InDiv">
+            <div class="ImgDiv">
+                <div class="testImg"></div>
+            </div>
+            <div class="InfoDiv">
+                <div>About Me</div>
+                <div>
+                    alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
+                    alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
+                    alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
+                    alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
+                    alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
+                    alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
+                </div>
+            </div>
+            <div class="clear"></div>
+            
+        </div>
+    </div>
+    <style>
+        .outDiv.Second .InDiv { padding:50px 0; }
+        .ImgDiv { float:left; padding:0 50px; }
+        .ImgDiv .testImg { width:200px; height:200px; background: red; }
+        .InfoDiv { float:left; }
+    </style>
+    <div class="outDiv Third">
+        <div class="InDiv">
+
+            asdfasdfadsf
+        </div>
+    </div>
+
+    <a class="btn_top" href="javascript:;">
+        
+    </a>    
 </body>
 </html>
+
