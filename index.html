@@ -46,9 +46,9 @@
         
         .outDiv.MenuDiv.Fixed { position:fixed; background-color:white; z-index:2; border-bottom:1px solid black; }        
         
-        .outDiv.First { background-color: #F7F0E9; }
-        .outDiv.Second { background-color:white;}
-        .outDiv.Third { background-color: #EEE1D2; }
+        .outDiv.Num1 { background-color: #F7F0E9; }
+        .outDiv.Num2 { background-color:white;}
+        .outDiv.Num3 { background-color: #EEE1D2; }
         .outDiv .InDiv { width:1200px; margin:0 auto; position:relative; }
         .outDiv .InDiv .TopMenu { width:1200px; padding:40px 0 10px 0; }
         .outDiv .InDiv .TopMenu .MLeft { width:200px; padding:0 0 0 5px; float:left; font-weight:bold; }
@@ -58,26 +58,26 @@
         .outDiv .InDiv .TopMenu .MRight li.LiSelected { padding:5px 14px; margin: -5px 0 -5px 2px; color:white; background-color: #000000; border-radius:20px; border:0; }    
         .outDiv .InDiv .TopMenu .MRight li.LiSelected:nth-last-child(1) { margin: -5px -10px -5px 2px; }        
 
-        .outDiv.First .InDiv .Title { text-align:right; padding:100px; }
-        .outDiv.First .InDiv .Title .S { margin-bottom:14px; }
-        .outDiv.First .InDiv .Title .M { font-size:60px; }
-        .outDiv.First .InDiv .Title .L { font-weight:600; font-size:60px; }        
+        .outDiv.Num1 .InDiv .Title { text-align:right; padding:100px; }
+        .outDiv.Num1 .InDiv .Title .S { margin-bottom:14px; }
+        .outDiv.Num1 .InDiv .Title .M { font-size:60px; }
+        .outDiv.Num1 .InDiv .Title .L { font-weight:600; font-size:60px; }        
         
 
-        .outDiv.Second .InDiv { padding:50px 0; }
+        .outDiv.Num2 .InDiv { padding:50px 0; }
         .ImgDiv { float:left; padding:0 50px; }
         .ImgDiv .testImg { width:200px; height:200px; background: skyblue; }
         .InfoDiv { float:left; }
 
-        .outDiv.Third .InDiv, .outDiv.Fourth .InDiv { padding:50px 0; }
-        .outDiv.Third .InDiv .Title, .outDiv.Fourth .InDiv .Title { font-weight:500; letter-spacing:6px; margin-bottom:50px; width:100%; text-align:center; font-size:35px; }
-        .outDiv.Third .InDiv .Content li { width:33.3%; }        
-        .outDiv.Third .InDiv .Content li .AbilityBall { width:100%; }
-        .outDiv.Third .InDiv .Content li .Ball { margin:0 auto; text-align:center; line-height:100px; width:100px; height:100px; border-radius:50%; background-color: skyblue; }        
+        .outDiv.Num3 .InDiv, .outDiv.Num4 .InDiv { padding:50px 0; }
+        .outDiv.Num3 .InDiv .Title, .outDiv.Num4 .InDiv .Title { font-weight:500; letter-spacing:6px; margin-bottom:50px; width:100%; text-align:center; font-size:35px; }
+        .outDiv.Num3 .InDiv .Content li { width:33.3%; }        
+        .outDiv.Num3 .InDiv .Content li .AbilityBall { width:100%; }
+        .outDiv.Num3 .InDiv .Content li .Ball { margin:0 auto; text-align:center; line-height:100px; width:100px; height:100px; border-radius:50%; background-color: skyblue; }        
 
-        .outDiv.Fourth .InDiv .Content li { width:33.3%; padding:0 20px 20px 0; }        
-        .outDiv.Fourth .InDiv .Content li.None { padding:0 0 20px 0; }        
-        .outDiv.Fourth .InDiv .Content li .file { width:100%; height:400px; background-color: mediumaquamarine; }        
+        .outDiv.Num4 .InDiv .Content li { width:33.3%; padding:0 20px 20px 0; }        
+        .outDiv.Num4 .InDiv .Content li.None { padding:0 0 20px 0; }        
+        .outDiv.Num4 .InDiv .Content li .file { width:100%; height:400px; background-color: mediumaquamarine; }        
         .btn_top { background-color:black; width:20px; height:20px; position: fixed; bottom:40px; right:40px; display: none; }
     </style>
     <script type="text/javascript">
@@ -88,6 +88,11 @@
                 $(this).addClass("LiSelected");
             }).mouseout(function(){
                 $(".Menu").removeClass("LiSelected");
+            }).click(function(){
+                var Mindex = $(this).index() + 1;
+                var pos = $(".outDiv.Num" + Mindex).offset().top - 100;
+                
+                $( 'html, body' ).animate( { scrollTop : pos }, 400 );
             });
                 
             $( window ).scroll( function() {
@@ -134,7 +139,7 @@
             </div>
         </div>
     </div>
-    <div class="outDiv First">
+    <div class="outDiv Num1">
         <div class="InDiv">
             <div class="Title">
                 <div class="S">ASDWQDASDASDASD</div>
@@ -143,7 +148,7 @@
             </div>
         </div>
     </div>
-    <div class="outDiv Second">
+    <div class="outDiv Num2">
         <div class="InDiv">
             <div class="ImgDiv">
                 <div class="testImg"></div>
@@ -165,7 +170,7 @@
     </div>
     <style>
     </style>
-    <div class="outDiv Third">
+    <div class="outDiv Num3">
         <div class="InDiv">
             <div class="Title">
                 FFFFFSD
@@ -201,7 +206,7 @@
             </div>
         </div>
     </div>
-    <div class="outDiv Fourth">
+    <div class="outDiv Num4">
         <div class="InDiv">
             <div class="Title">
                 My FFFFFF
@@ -235,6 +240,34 @@
 
     <a class="btn_top" href="javascript:;">
         
+    </a>     
+</body>
+</html>
+   </a>    
+</body>
+</html>
+>
+>
+a>    
+</body>
+</html>
+>
+>
+        <li>
+                        <div class="file"></div>
+                    </li>
+                    <li class="None">
+                        <div class="file"></div>                        
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <a class="btn_top" href="javascript:;">
+        
     </a>    
 </body>
 </html>
@@ -243,17 +276,7 @@
 </html>
 >
 >
-/a>    
-</body>
-</html>
-    </a>    
-</body>
-</html>
->
->
-body>
-</html>
-    </a>    
+   </a>    
 </body>
 </html>
 >
