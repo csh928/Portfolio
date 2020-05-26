@@ -97,10 +97,12 @@
                 
             $( window ).scroll( function() {
                 if ( $(this).scrollTop() > 100 ) {
-                    $(".outDiv.MenuDiv").addClass("Fixed");                              
+                    $(".outDiv.MenuDiv").addClass("Fixed");  
+                    $(".outDiv.Num1").css("padding-top", "71px");                             
                     $( '.btn_top' ).fadeIn();
                 } else {
                     $(".outDiv.MenuDiv").removeClass("Fixed");
+                    $(".outDiv.Num1").css("padding-top", "0");         
                     $( '.btn_top' ).fadeOut();
                 }
             } );
@@ -286,4 +288,4 @@
         
     </a>     
 </body>
-</html>l>
+</html>
