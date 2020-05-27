@@ -76,17 +76,18 @@
         .outDiv.Num3 .InDiv .Content li .AbilityBall { width:100%; }
         .outDiv.Num3 .InDiv .Content li .Ball { margin:0 auto; text-align:center; line-height:100px; width:100px; height:100px; border-radius:50%; background-color: skyblue; }        
 
-        .outDiv.Num4 .InDiv .Content li { width:33.3%; padding:0 20px 20px 0; }        
-        .outDiv.Num4 .InDiv .Content li.None { padding:0 0 20px 0; }        
+        .outDiv.Num4 .InDiv .Content li { width:33.3%; padding:0 20px 20px 0; }   
+        .outDiv.Num4 .InDiv .Content li:nth-child(3n) { padding:0 0 20px 0; }           
+
         .outDiv.Num4 .InDiv .Content li .file { width:100%; height:400px; background-color: mediumaquamarine; }        
         .btn_top { background-color:black; width:20px; height:20px; position: fixed; bottom:40px; right:40px; display: none; }
 
         @media (max-width:599px) {
             .outDiv .InDiv { width:100%; }
             .outDiv .InDiv .TopMenu { width:100%; padding:1rem 0 0.25rem 0; }   
-            .outDiv .InDiv .TopMenu .MLeft { width:100%; padding:0 0 0 0.5rem; font-size:0.25rem; margin-bottom:1rem; text-align:center; }    
+            .outDiv .InDiv .TopMenu .MLeft { width:100%; padding:0 0 0 0.5rem; font-size:0.75rem; margin-bottom:1rem; text-align:center; }    
             .outDiv .InDiv .TopMenu .MRight { width:100%; float:none; }        
-            .outDiv .InDiv .TopMenu .MRight li.Menu { width:20%; text-align:center; font-size:0.325rem; padding:0; margin:0; }            
+            .outDiv .InDiv .TopMenu .MRight li.Menu { width:20%; text-align:center; font-size:0.9rem; padding:0; margin:0; }            
             .outDiv .InDiv .TopMenu .MRight li.Menu:nth-last-child(1) { margin:0; }            
 
             .outDiv.Num1 .InDiv .Title { text-align:right; padding:5rem 1rem; }
@@ -101,7 +102,9 @@
 
 
 
-            .outDiv.Num4 .InDiv .Content li { width:50%; padding:0 20px 20px 0; }       
+            .outDiv.Num4 .InDiv .Content li { width:50%; padding:0 0.5rem 0.5rem 0; }  
+            .outDiv.Num4 .InDiv .Content li:nth-child(3n) { padding:0 0.5rem 0.5rem 0; }
+            .outDiv.Num4 .InDiv .Content li:nth-child(2n) { padding:0 0 0.5rem 0; }                      
             .outDiv.Num4 .InDiv .Content li .file { width:100%; height:12rem; background-color: mediumaquamarine; } 
 
             .btn_top { width:2rem; height:2rem; bottom:1.75rem; right:1.75rem; display: none; }
@@ -292,7 +295,7 @@
                     <li>
                         <div class="file"></div>
                     </li>
-                    <li class="None">
+                    <li>
                         <div class="file"></div>                        
                     </li>
                     <li>
@@ -301,7 +304,7 @@
                     <li>
                         <div class="file"></div>
                     </li>
-                    <li class="None">
+                    <li>
                         <div class="file"></div>                        
                     </li>
                     <div class="clear"></div>
@@ -315,4 +318,4 @@
         
     </a>     
 </body>
-</html>
+</html>l>
