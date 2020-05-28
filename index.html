@@ -38,6 +38,8 @@
         select {-webkit-appearance: none; -moz-appearance:none; appearance:none;}
         select::-ms-expand { display:none; }
 
+        :root { --swiper-theme-color: #000000; }
+
         .clear { clear:both; }
 
         .bg_layer { display:none; width:100%; height:100%; position: fixed; top: 0; left: 0; background-color: #000000; opacity: 0.8; filter: alpha(opacity=80); -ms-filter: alpha(opacity=80); z-index: 3; }
@@ -73,17 +75,28 @@
 
         .outDiv.Num3 .InDiv, .outDiv.Num4 .InDiv { padding:50px 0; }
         .outDiv.Num3 .InDiv .Title, .outDiv.Num4 .InDiv .Title { font-weight:500; letter-spacing:6px; margin-bottom:50px; width:100%; text-align:center; font-size:35px; }
-        .outDiv.Num3 .InDiv .swiper-wrapper { width:120px; height:120px; }
-        .outDiv.Num3 .InDiv .swiper-wrapper .swiper-slide { margin:0 20px;  }
-        .outDiv.Num3 .InDiv .itemBox { background-color:#ffffff; border-radius:50%; padding:10px; width:100%; height:100%; background-size:65%; background-position:center; background-repeat: no-repeat; }        
         
         
-        .outDiv.Num3 .InDiv .itemBox.Bg1 { background-image:url(https://user-images.githubusercontent.com/61041001/83019284-a3e22480-a061-11ea-987a-10988f309f04.png); }
-        .outDiv.Num3 .InDiv .itemBox.Bg2 { background-image:url(https://user-images.githubusercontent.com/61041001/83019468-f6234580-a061-11ea-8024-2aa9c742842e.png); }
-        .outDiv.Num3 .InDiv .itemBox.Bg3 { background-image:url(https://user-images.githubusercontent.com/61041001/83019552-1e12a900-a062-11ea-85ae-07b335aba148.png); }
-        .outDiv.Num3 .InDiv .itemBox.Bg4 { background-image:url(https://user-images.githubusercontent.com/61041001/83019553-1f43d600-a062-11ea-93de-cfa85747ce05.png); }
-        .outDiv.Num3 .InDiv .itemBox.Bg5 { background-image:url(https://user-images.githubusercontent.com/61041001/83019554-1f43d600-a062-11ea-81d7-60c2eadfccf8.png); }
-        .outDiv.Num3 .InDiv .itemBox.Bg6 { background-image:url(https://user-images.githubusercontent.com/61041001/83019557-1fdc6c80-a062-11ea-86b6-b9f9c240d98c.png); }
+        .outDiv.Num3 .InDiv .swiper-wrapper { height:156px; }
+        .outDiv.Num3 .InDiv .swiper-wrapper .swiper-slide { width:120px; text-align:center; }
+        .outDiv.Num3 .InDiv .swiper-wrapper .swiper-slide .itemBox { margin:0 10px; display:inline-block; background-color:#ffffff; border-radius:50%; padding:10px; width:120px; height:120px; background-size:65%; background-position:center; background-repeat: no-repeat; }        
+        .outDiv.Num3 .InDiv .swiper-button-prev, .outDiv.Num3 .InDiv .swiper-button-next { margin-top:-36px; }
+        
+        
+        .outDiv.Num3 .InDiv .itemBox.Bg1 { background-image:url(https://user-images.githubusercontent.com/61041001/83019553-1f43d600-a062-11ea-93de-cfa85747ce05.png); }
+        .outDiv.Num3 .InDiv .itemBox.Bg2 { background-image:url(https://user-images.githubusercontent.com/61041001/83019554-1f43d600-a062-11ea-81d7-60c2eadfccf8.png); }
+        .outDiv.Num3 .InDiv .itemBox.Bg3 { background-image:url(https://user-images.githubusercontent.com/61041001/83140053-62687c80-a128-11ea-82fd-a6f0923c86d2.png); }
+        .outDiv.Num3 .InDiv .itemBox.Bg4 { background-image:url(https://user-images.githubusercontent.com/61041001/83019468-f6234580-a061-11ea-8024-2aa9c742842e.png); }
+        .outDiv.Num3 .InDiv .itemBox.Bg5 { background-image:url(https://user-images.githubusercontent.com/61041001/83019284-a3e22480-a061-11ea-987a-10988f309f04.png); }
+        .outDiv.Num3 .InDiv .itemBox.Bg6 { background-image:url(https://user-images.githubusercontent.com/61041001/83019552-1e12a900-a062-11ea-85ae-07b335aba148.png); }
+        .outDiv.Num3 .InDiv .itemBox.Bg7 { background-image:url(https://user-images.githubusercontent.com/61041001/83019557-1fdc6c80-a062-11ea-86b6-b9f9c240d98c.png); }
+        
+        .outDiv.Num3 .InDiv .itemBox.Bg8 { background-image:url(https://user-images.githubusercontent.com/61041001/83140534-2f72b880-a129-11ea-9617-cc9fedff66d8.png); }
+        .outDiv.Num3 .InDiv .itemBox.Bg9 { background-image:url(https://user-images.githubusercontent.com/61041001/83140530-2da8f500-a129-11ea-9e36-5e5846e167c0.jpg); }
+        .outDiv.Num3 .InDiv .itemBox.Bg10 { background-image:url(https://user-images.githubusercontent.com/61041001/83140539-30a3e580-a129-11ea-8c62-3cae7e6f0ede.png); }
+        .outDiv.Num3 .InDiv .itemBox.Bg11 { background-image:url(https://user-images.githubusercontent.com/61041001/83140537-300b4f00-a129-11ea-8342-e0c8a7709c8f.png); }
+        .outDiv.Num3 .InDiv .itemBox.Bg12 { background-image:url(https://user-images.githubusercontent.com/61041001/83140536-300b4f00-a129-11ea-8103-c09399411a8e.png); }
+        .outDiv.Num3 .InDiv .itemBox.Bg13 { background-image:url(https://user-images.githubusercontent.com/61041001/83140533-2eda2200-a129-11ea-9400-02b487322416.png); }
         
         .outDiv.Num4 .InDiv .Content li { width:33.3%; padding:0 20px 20px 0; }   
         .outDiv.Num4 .InDiv .Content li:nth-child(3n) { padding:0 0 20px 0; }           
@@ -97,7 +110,8 @@
         .outDiv.Num4 .InDiv .Content li .file.bG6 { background-image:url(https://user-images.githubusercontent.com/61041001/83029546-bf532c80-a06d-11ea-8195-5dc47bba1fc7.jpg); }
         
         
-        .btn_top { background-color:black; width:20px; height:20px; position: fixed; bottom:40px; right:40px; display: none; }
+        .btn_top { width:40px; height:40px; position: fixed; bottom:40px; right:40px; display: none; }
+        .btn_top img { width:100%; height:100%; }
 
         @media (max-width:599px) {
             .outDiv .InDiv { width:100%; }
@@ -137,8 +151,6 @@
                 return this;
             }
             
-            //$(".bg_layer").css("width", window.innerWidth);
-                //$(".bg_layer").css("height", window.innerHeight);
             $(".Menu").mouseover(function(){
                 $(this).addClass("LiSelected");
             }).mouseout(function(){
@@ -158,13 +170,9 @@
             });
                 
             $( window ).scroll( function() {
-                if ( $(this).scrollTop() > 100 ) {
-//                    $(".outDiv.MenuDiv").addClass("Fixed");  
-  //                  $(".outDiv.Num1").css("padding-top", "71px");                             
+                if ( $(this).scrollTop() > 100 ) {                        
                     $( '.btn_top' ).fadeIn();
-                } else {
-                    //$(".outDiv.MenuDiv").removeClass("Fixed");
-                    //$(".outDiv.Num1").css("padding-top", "0");         
+                } else {     
                     $( '.btn_top' ).fadeOut();
                 }
             } );
@@ -179,12 +187,8 @@
         });
 
         var SkillContent = [
-                             ["<div class='itemBox Bg1'></div>"],
-                             ["<div class='itemBox Bg2'></div>"],
-                             ["<div class='itemBox Bg3'></div>"],
-                             ["<div class='itemBox Bg4'></div>"],
-                             ["<div class='itemBox Bg5'></div>"],
-                             ["<div class='itemBox Bg6'></div>"]
+                             ["<div class='itemBox Bg1'></div>","<div class='itemBox Bg2'></div>","<div class='itemBox Bg3'></div>","<div class='itemBox Bg4'></div>","<div class='itemBox Bg5'></div>","<div class='itemBox Bg6'></div>","<div class='itemBox Bg7'></div>"],
+                             ["<div class='itemBox Bg8'></div>","<div class='itemBox Bg9'></div>","<div class='itemBox Bg10'></div>","<div class='itemBox Bg11'></div>","<div class='itemBox Bg12'></div>","<div class='itemBox Bg13'></div>"]
                            ];
 
         function fnMakeSwipe(name, num)
@@ -217,11 +221,11 @@
             $(".outDiv.Num3").find(".Content").html(html);    
 
             var skillSwiper = new Swiper(".Content>.swiper-container", { 
-                centeredSlides: true,
-                slidesPerView: 'auto',
+                //centeredSlides: true,
+                //slidesPerView: '3',
                 spaceBetween: 0,
                 effect: 'slide',
-                loop: true,
+                //loop: true,
                 navigation: {
                 	nextEl: '.swiper-button-next',
                 	prevEl: '.swiper-button-prev',
@@ -229,18 +233,30 @@
                 pagination: { el: '.swiper-pagination',
                     clickable: true,
                 },
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
+                //autoplay: {
+                //    delay: 4000,
+                //    disableOnInteraction: false,
+                //},
             });                    
         }
 
-
+        var imgPath = "https://user-images.githubusercontent.com/61041001/";
         var PopContent1 = [
-                            ['a<br>아아아아','b'],
-                            ['우','하','이','요']
+                            ['<img src="'+imgPath+'83028594-9bdbb200-a06c-11ea-8210-7a1845008fa4.jpg">'],
+                            ['<img src="'+imgPath+'83144954-02c19f80-a12f-11ea-811e-71fb789f933b.jpg">'],
+                            ['<img src="'+imgPath+'83144960-048b6300-a12f-11ea-9ba3-86a7a4309aa6.jpg">'],
                           ];
+        var PopDescript1 = '<div class="descript">';
+            PopDescript1 += ' <div class="deTitle">디자인 공모전</br>접수 / 수정 / 투표 / 관리자</div>';
+            PopDescript1 += '  <ul>';
+            PopDescript1 += '   <li>1. 디자인 공모전 설명 페이지 / 회원 댓글</li>';
+            PopDescript1 += '   <li>1. 지원자 정보 / 작품설명 / 첨부파일 작성</li>';
+            PopDescript1 += '   <li>1. 사이트 회원 투표 진행</li>';
+            PopDescript1 += '   <li>1. 관리자 사이트 연동 평가 및 메모 저장 기능</li>';
+            PopDescript1 += '   <li>웹 퍼블리싱 및 테이블 설계, 개발</li>';
+            PopDescript1 += '   <li>- Javascript, Jquery, Ajax, Oracle, Asp, Swiper Api</li>';
+            PopDescript1 += '  </ul>';
+            PopDescript1 += '</div>';                          
         var PopContent2 = ['a<br>아호이이이','b'];
 
 
@@ -250,12 +266,13 @@
         {
             $(".bg_layer").width($(document).width());
             $(".bg_layer").height($(document).height());
-            $(".PopContent").height($(window).height() * 0.8);
+            $(".PopContent").height($(window).height() * 0.7);
             alert(num);
 
             var html = fnMakeSwipe("PopContent", num);
             
             $(".PopContent").html(html);
+            $(".PopContent").append(eval("PopDescript" + num));
 
             $(".bg_layer,.PopContent").show();
             $(".PopContent").center();
@@ -282,10 +299,14 @@
     </script>
     <style>
         
-        .PopContent { display:none; padding:20px; background-color:gray; width:1000px; z-index:4; }
-        .PopContent .swiper-container { width:100%; height:100%; margin:0; }
-        .PopContent .swiper-container .itemBox { float:left; width:50%; }
-        .PopContent .swiper-container .description { float:left; width:50%; }
+        .PopContent { display:none; border-radius:10px; padding:50px; background-color:#ffffff; width:1000px; z-index:4; }
+        .PopContent .swiper-container { width:60%; height:100%; margin:0; float:left; }
+
+        .PopContent .swiper-container .swiper-slide { overflow-y: scroll; }
+        .PopContent .swiper-container .swiper-slide img { width:100%; }
+        .PopContent .descript { float:left; width:40%; padding:0 0 0 50px; }
+        .PopContent .descript .deTitle { font-size:20px; font-weight:bold; line-height: 24px; margin-bottom:30px; }
+        .PopContent .descript li { float:none; width:100%; color:#000000; font-size:16px; line-height:18px; margin-bottom:10px; }
         .PopContent .swiper-container .swiper-slide:after { content:' '; display:block; clear:both; }
         
     </style>
@@ -308,15 +329,23 @@
         <div class="InDiv">
             <div class="TopMenu">
                 <div class="MLeft">
-                    AFWDWDWQSD
+                    BRITZ
                 </div>
                 <div class="MRight">
                     <ul>
+                        <!--
                         <li class="Menu">AAAA</li>
                         <li class="Menu">AAAAAAA</li>
                         <li class="Menu">AAAAA</li>
                         <li class="Menu">AA</li>
                         <li class="Menu">AAAAAA</li>
+                        -->
+                        
+                        <li class="Menu">HOME</li>
+                        <li class="Menu">ABOUT ME</li>
+                        <li class="Menu">ABILITY</li>
+                        <li class="Menu">PORTFOLIO</li>
+                        <li class="Menu">CONTACT</li>
                     </ul>
                     <div class="clear"></div>
                 </div>
@@ -331,9 +360,14 @@
     <div class="outDiv Num1">
         <div class="InDiv">
             <div class="Title">
+                <!--
                 <div class="S">ASDWQDASDASDASD</div>
                 <div class="M">MY</div>
                 <div class="L">ASDQWDWDS</div>
+                -->
+                <div class="S">Web Programmer</div>
+                <div class="M">MY</div>
+                <div class="L">PORTFOLIO</div>
             </div>
         </div>
     </div>
@@ -347,7 +381,18 @@
                 <div class="testImg"></div>
             </div>
             <div class="InfoDiv">
+                <!--
                 <div>FFFF Me</div>
+                <div>
+                    alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
+                    alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
+                    alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
+                    alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
+                    alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
+                    alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
+                </div>
+                -->
+                <div>ABOUT ME</div>
                 <div>
                     alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
                     alsd;kjflaksdjfl;kadsjfl;kasjdfla;lsdfjkl;asdjf</br>
@@ -366,9 +411,9 @@
 
 
     <div class="outDiv Num3">
-        <div class="InDiv">
+        <div class="InDiv"> 
             <div class="Title">
-                FFFFFSD
+                ABILITY
             </div>
             <div class="Content">
             </div>
@@ -381,7 +426,7 @@
     <div class="outDiv Num4">
         <div class="InDiv">
             <div class="Title">
-                My FFFFFF
+                PORTFOLIO
             </div>
             <div class="Content">
                 <ul>
@@ -411,65 +456,7 @@
     </div>
 
     <a class="btn_top" href="javascript:;">
-        
+        <img src="https://user-images.githubusercontent.com/61041001/83137548-4ebb1700-a124-11ea-99f6-5665bc21b4d0.png"/>            
     </a>     
 </body>
-</html>
-</html>l>ody>
-</html>              <div class="clear"></div>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-
-    <a class="btn_top" href="javascript:;">
-        
-    </a>     
-</body>
-</html>
-</html>
-                    <li>
-                        <div class="file bG4" onclick="fnPopLayer('4');"></div>
-                    </li>
-                    <li>
-                        <div class="file bG5" onclick="fnPopLayer('5');"></div>
-                    </li>
-                    <li>
-                        <div class="file bG6" onclick="fnPopLayer('6');"></div>                        
-                    </li>
-                    <div class="clear"></div>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-
-    <a class="btn_top" href="javascript:;">
-        
-    </a>     
-</body>
-</html>  
-                    </li>
-                    <li>
-                        <div class="file bG4" onclick="fnPopLayer('4');"></div>
-                    </li>
-                    <li>
-                        <div class="file bG5" onclick="fnPopLayer('5');"></div>
-                    </li>
-                    <li>
-                        <div class="file bG6" onclick="fnPopLayer('6');"></div>                        
-                    </li>
-                    <div class="clear"></div>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-
-    <a class="btn_top" href="javascript:;">
-        
-    </a>     
-</body>
-</html>
-</html>
+</html>>
