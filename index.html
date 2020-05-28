@@ -40,15 +40,16 @@
 
         .clear { clear:both; }
 
-        .bg_layer { position: fixed; top: 0; left: 0; background-color: #000000; opacity: 0.8; filter: alpha(opacity=80); -ms-filter: alpha(opacity=80); z-index: 99999; }
+        .bg_layer { display:none; width:100%; height:100%; position: fixed; top: 0; left: 0; background-color: #000000; opacity: 0.8; filter: alpha(opacity=80); -ms-filter: alpha(opacity=80); z-index: 3; }
         .outDiv { width:100%; }
         .outDiv.MenuDiv { position:fixed; background-color:#000000; z-index:2; }
         
         /*.outDiv.MenuDiv.Fixed { position:fixed; background-color:#000000; z-index:2; }        */
         
         .outDiv.Num1 { background-color: #f4f4f4; padding-top:70px; }
-        .outDiv.Num2 { background-color:white;}
-        .outDiv.Num3 { background-color: #EEE1D2; }
+        .outDiv.Num2 { background-color:#f4f4f4;}
+        .outDiv.Num3 { background-color: #f4f4f4; }
+        .outDiv.Num4 { background-color: #f4f4f4; }
         .outDiv .InDiv { width:1200px; margin:0 auto; position:relative; }
         .outDiv .InDiv .TopMenu { width:1200px; padding:40px 0 10px 0; }
         .outDiv .InDiv .TopMenu .MLeft { color:#ffffff; width:200px; padding:0 0 0 5px; float:left; font-weight:bold; }
@@ -76,21 +77,25 @@
         .outDiv.Num3 .InDiv .swiper-wrapper .swiper-slide { margin:0 20px;  }
         .outDiv.Num3 .InDiv .itemBox { background-color:#ffffff; border-radius:50%; padding:10px; width:100%; height:100%; background-size:65%; background-position:center; background-repeat: no-repeat; }        
         
+        /*
         .outDiv.Num3 .InDiv .itemBox.Bg1 { background-image:url(https://user-images.githubusercontent.com/61041001/83019284-a3e22480-a061-11ea-987a-10988f309f04.png); }
         .outDiv.Num3 .InDiv .itemBox.Bg2 { background-image:url(https://user-images.githubusercontent.com/61041001/83019468-f6234580-a061-11ea-8024-2aa9c742842e.png); }
         .outDiv.Num3 .InDiv .itemBox.Bg3 { background-image:url(https://user-images.githubusercontent.com/61041001/83019552-1e12a900-a062-11ea-85ae-07b335aba148.png); }
         .outDiv.Num3 .InDiv .itemBox.Bg4 { background-image:url(https://user-images.githubusercontent.com/61041001/83019553-1f43d600-a062-11ea-93de-cfa85747ce05.png); }
         .outDiv.Num3 .InDiv .itemBox.Bg5 { background-image:url(https://user-images.githubusercontent.com/61041001/83019554-1f43d600-a062-11ea-81d7-60c2eadfccf8.png); }
         .outDiv.Num3 .InDiv .itemBox.Bg6 { background-image:url(https://user-images.githubusercontent.com/61041001/83019557-1fdc6c80-a062-11ea-86b6-b9f9c240d98c.png); }
-
+        */
         .outDiv.Num4 .InDiv .Content li { width:33.3%; padding:0 20px 20px 0; }   
         .outDiv.Num4 .InDiv .Content li:nth-child(3n) { padding:0 0 20px 0; }           
 
         .outDiv.Num4 .InDiv .Content li .file { cursor:pointer; width:100%; height:400px; background-size:100% auto; background-position:center top; background-repeat: no-repeat; }        
+        /*
         .outDiv.Num4 .InDiv .Content li .file.bG1 { background-image:url(https://user-images.githubusercontent.com/61041001/83028594-9bdbb200-a06c-11ea-8210-7a1845008fa4.jpg); }
         .outDiv.Num4 .InDiv .Content li .file.bG2 { background-image:url(https://user-images.githubusercontent.com/61041001/83028589-9a11ee80-a06c-11ea-9c71-8d300f5870c3.jpg); }
         .outDiv.Num4 .InDiv .Content li .file.bG3 { background-image:url(https://user-images.githubusercontent.com/61041001/83029224-65526700-a06d-11ea-8951-5066e8689a15.jpg); }
-        .outDiv.Num4 .InDiv .Content li .file.bG4 { background-image:url(https://user-images.githubusercontent.com/61041001/83029546-bf532c80-a06d-11ea-8195-5dc47bba1fc7.jpg); }
+        .outDiv.Num4 .InDiv .Content li .file.bG4 { background-image:url(https://user-images.githubusercontent.com/61041001/83030807-c6c70580-a06e-11ea-8904-12922b2d5266.jpg); }
+        .outDiv.Num4 .InDiv .Content li .file.bG6 { background-image:url(https://user-images.githubusercontent.com/61041001/83029546-bf532c80-a06d-11ea-8195-5dc47bba1fc7.jpg); }
+        */
         
         .btn_top { background-color:black; width:20px; height:20px; position: fixed; bottom:40px; right:40px; display: none; }
 
@@ -145,14 +150,11 @@
                 $( 'html, body' ).animate( { scrollTop : pos }, 400 );
             });
 
-            $(".file").click(function(){
-                $(".bg_layer").width($(document).width());
-                $(".bg_layer").height($(document).height());
-                $(".bg_layer").show();
-            });
+            
 
             $(".bg_layer").click(function(){
-                $(".bg_layer").hide();
+                $(".bg_layer,.PopContent").hide();
+                $("body").css("overflow-y","scroll");
             });
                 
             $( window ).scroll( function() {
@@ -171,16 +173,159 @@
                 $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
                 return false;
             } );
+
+            fnSkillSwipe();
+            
         });
+
+        var SkillContent = [
+                             ["<div class='itemBox Bg1'></div>"],
+                             ["<div class='itemBox Bg2'></div>"],
+                             ["<div class='itemBox Bg3'></div>"],
+                             ["<div class='itemBox Bg4'></div>"],
+                             ["<div class='itemBox Bg5'></div>"],
+                             ["<div class='itemBox Bg6'></div>"]
+                           ];
+
+        function fnMakeSwipe()
+        {
+
+        }
+
+        function fnSkillSwipe()
+        {
+            var html;
+            html = '<div class="swiper-container">';
+            html += ' <div class="swiper-wrapper">';
+            for (var i of SkillContent)
+            {
+                html += '  <div class="swiper-slide">';
+                for (var j of i )
+                {
+                    html += j;
+                }
+                html += '  </div>';
+            }
+            html += ' </div>';
+            html += ' <div class="swiper-pagination"></div>';
+            //html += ' <div class="swiper-button-next"></div>';
+            //html += ' <div class="swiper-button-prev"></div>';
+            html += '</div>';
+            
+            $(".outDiv.Num3").find(".Content").html(html);    
+
+            var skillSwiper = new Swiper(".Content>.swiper-container", { 
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                effect: 'slide',
+                loop: true,
+                //navigation: {
+                //	nextEl: '.swiper-button-next',
+                //	prevEl: '.swiper-button-prev',
+                //},
+                pagination: { el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+            });                    
+        }
+
+
+        var PopContent1 = [
+                            ['a<br>아아아아','b'],
+                            ['우','하','이','요']
+                          ];
+        var PopContent2 = ['a<br>아호이이이','b'];
+
+
+
+
+        function fnPopLayer(num)
+        {
+            $(".bg_layer").width($(document).width());
+            $(".bg_layer").height($(document).height());
+            alert(num);
+
+            var html;
+            html = '<div class="swiper-container">';
+            html += ' <div class="swiper-wrapper">';
+            for (var i of eval("PopContent" + num))
+            {
+                html += '  <div class="swiper-slide">';
+                for (var j of i )
+                {
+                    html += j;
+                }
+                html += '  </div>';
+            }
+            html += ' </div>';
+            html += ' <div class="swiper-pagination"></div>';
+            html += ' <div class="swiper-button-next"></div>';
+            html += ' <div class="swiper-button-prev"></div>';
+            html += '</div>';
+            
+            $(".PopContent").html(html);
+
+            $(".bg_layer,.PopContent").show();
+            $(".PopContent").center();
+            $("body").css("overflow-y","hidden");
+            
+
+            var popSwiper = new Swiper(".PopContent>.swiper-container", { 
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                effect: 'slide',
+                //loop: true,
+                navigation: {
+                	nextEl: '.swiper-button-next',
+                	prevEl: '.swiper-button-prev',
+                },
+                pagination: { 
+                    el: ".swiper-pagination",
+                    //clickable: true,
+                    type: 'progressbar',
+                },
+                //autoplay: {
+                //    delay: 4000,
+                //    disableOnInteraction: false,
+                //},
+            });
+        }
 /*
         $(document).on("mouseover",".MRight > ul > li", function(){
             alert("asdf");
         });
 */        
     </script>
+    <style>
+        
+        .PopContent { display:none; padding:20px; background-color:gray; width:1000px; height:600px; z-index:4; }
+        .PopContent .swiper-container { width:100%; height:100%; margin:0; }
+        .PopContent .swiper-container .itemBox { float:left; width:50%; }
+        .PopContent .swiper-container .description { float:left; width:50%; }
+        .PopContent .swiper-container .swiper-slide:after { content:' '; display:block; clear:both; }
+        
+    </style>
 </head>
 <body>
+    <!--
+            <div class="swiper-slide">
+                <div class="itemBox Bg1">
+                    
+                </div>
+                <div class="description">
+                    와라라랄라라
+                </div>
+            </div>	
+        -->
     <div class="bg_layer"></div>
+    <div class="PopContent"></div>
+    
     <div class="outDiv MenuDiv">
         <div class="InDiv">
             <div class="TopMenu">
@@ -201,6 +346,10 @@
             </div>
         </div>
     </div>
+
+
+
+
     <div class="outDiv Num1">
         <div class="InDiv">
             <div class="Title">
@@ -210,6 +359,10 @@
             </div>
         </div>
     </div>
+
+
+
+
     <div class="outDiv Num2">
         <div class="InDiv">
             <div class="ImgDiv">
@@ -230,56 +383,70 @@
             
         </div>
     </div>
-    <style>
-    </style>
+
+
+
+
     <div class="outDiv Num3">
         <div class="InDiv">
             <div class="Title">
                 FFFFFSD
             </div>
             <div class="Content">
-                <div class="swiper-container">
-					<div class="swiper-wrapper">
-                        
-                        <div class="swiper-slide">
-                            <div class="itemBox Bg1">
-                                <!--css3-->                                
-                            </div>
-                        </div>	
-                        <div class="swiper-slide">
-                            <div class="itemBox Bg2">
-                                <!--html-->
-                            </div>
-                        </div>	
-                        <div class="swiper-slide">
-                            <div class="itemBox Bg3">
-                                <!--ajax-->
-                            </div>
-                        </div>	
-                        <div class="swiper-slide">
-                            <div class="itemBox Bg4">
-                                <!--asp-->                        
-                            </div>
-                        </div>	
-                        
-                        <div class="swiper-slide">
-                            <div class="itemBox Bg5">
-                                <!--jquery-->
-                            </div>
-                        </div>	
-                        <div class="swiper-slide">
-                            <div class="itemBox Bg6">
-                                <!--oracle-->
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="outDiv Num4">
+        <div class="InDiv">
+            <div class="Title">
+                My FFFFFF
+            </div>
+            <div class="Content">
+                <ul>
+                    <li>
+                        <div class="file bG1" onclick="fnPopLayer('1');"></div>
+                    </li>
+                    <li>
+                        <div class="file bG2" onclick="fnPopLayer('2');"></div>
+                    </li>
+                    <li>
+                        <div class="file bG3" onclick="fnPopLayer('3');"></div>                        
+                    </li>
+                    <li>
+                        <div class="file bG4" onclick="fnPopLayer('4');"></div>
+                    </li>
+                    <li>
+                        <div class="file bG5" onclick="fnPopLayer('5');"></div>
+                    </li>
+                    <li>
+                        <div class="file bG6" onclick="fnPopLayer('6');"></div>                        
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <a class="btn_top" href="javascript:;">
+        
+    </a>     
+</body>
+</html>                            <!--oracle-->
                             </div>
                         </div>	
                     </div>
-                    <div class="swiper-pagination id_slide1_slider_pagination" style=""></div>			                    
+                    <div class="swiper-pagination" style=""></div>			                    
                 </div>
                 
 
 
                 <script type="text/javascript">
-                    var mainSwiper1 = new Swiper(".swiper-container", { 
+                    var skillSwiper = new Swiper(".Content>.swiper-container", { 
 						centeredSlides: true,
 						slidesPerView: 'auto',
 						spaceBetween: 0,
@@ -338,22 +505,22 @@
             <div class="Content">
                 <ul>
                     <li>
-                        <div class="file bG1"></div>
+                        <div class="file bG1" onclick="fnPopLayer('1');"></div>
                     </li>
                     <li>
-                        <div class="file bG2"></div>
+                        <div class="file bG2" onclick="fnPopLayer('2');"></div>
                     </li>
                     <li>
-                        <div class="file bG3"></div>                        
+                        <div class="file bG3" onclick="fnPopLayer('3');"></div>                        
                     </li>
                     <li>
-                        <div class="file bG4"></div>
+                        <div class="file bG4" onclick="fnPopLayer('4');"></div>
                     </li>
                     <li>
-                        <div class="file bG5"></div>
+                        <div class="file bG5" onclick="fnPopLayer('5');"></div>
                     </li>
                     <li>
-                        <div class="file bG6"></div>                        
+                        <div class="file bG6" onclick="fnPopLayer('6');"></div>                        
                     </li>
                     <div class="clear"></div>
                 </ul>
@@ -366,4 +533,4 @@
         
     </a>     
 </body>
-</html>
+</html>l>
