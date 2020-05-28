@@ -187,17 +187,12 @@
                              ["<div class='itemBox Bg6'></div>"]
                            ];
 
-        function fnMakeSwipe()
-        {
-
-        }
-
-        function fnSkillSwipe()
+        function fnMakeSwipe(name, num)
         {
             var html;
             html = '<div class="swiper-container">';
             html += ' <div class="swiper-wrapper">';
-            for (var i of SkillContent)
+            for (var i of eval(name + num))
             {
                 html += '  <div class="swiper-slide">';
                 for (var j of i )
@@ -208,9 +203,16 @@
             }
             html += ' </div>';
             html += ' <div class="swiper-pagination"></div>';
-            //html += ' <div class="swiper-button-next"></div>';
-            //html += ' <div class="swiper-button-prev"></div>';
+            html += ' <div class="swiper-button-next"></div>';
+            html += ' <div class="swiper-button-prev"></div>';
             html += '</div>';
+
+            return html;
+        }
+
+        function fnSkillSwipe()
+        {
+            var html = fnMakeSwipe("SkillContent", "");
             
             $(".outDiv.Num3").find(".Content").html(html);    
 
@@ -220,10 +222,10 @@
                 spaceBetween: 0,
                 effect: 'slide',
                 loop: true,
-                //navigation: {
-                //	nextEl: '.swiper-button-next',
-                //	prevEl: '.swiper-button-prev',
-                //},
+                navigation: {
+                	nextEl: '.swiper-button-next',
+                	prevEl: '.swiper-button-prev',
+                },
                 pagination: { el: '.swiper-pagination',
                     clickable: true,
                 },
@@ -248,25 +250,10 @@
         {
             $(".bg_layer").width($(document).width());
             $(".bg_layer").height($(document).height());
+            $(".PopContent").height($(window).height() * 0.8);
             alert(num);
 
-            var html;
-            html = '<div class="swiper-container">';
-            html += ' <div class="swiper-wrapper">';
-            for (var i of eval("PopContent" + num))
-            {
-                html += '  <div class="swiper-slide">';
-                for (var j of i )
-                {
-                    html += j;
-                }
-                html += '  </div>';
-            }
-            html += ' </div>';
-            html += ' <div class="swiper-pagination"></div>';
-            html += ' <div class="swiper-button-next"></div>';
-            html += ' <div class="swiper-button-prev"></div>';
-            html += '</div>';
+            var html = fnMakeSwipe("PopContent", num);
             
             $(".PopContent").html(html);
 
@@ -290,21 +277,12 @@
                     //clickable: true,
                     type: 'progressbar',
                 },
-                //autoplay: {
-                //    delay: 4000,
-                //    disableOnInteraction: false,
-                //},
             });
         }
-/*
-        $(document).on("mouseover",".MRight > ul > li", function(){
-            alert("asdf");
-        });
-*/        
     </script>
     <style>
         
-        .PopContent { display:none; padding:20px; background-color:gray; width:1000px; height:600px; z-index:4; }
+        .PopContent { display:none; padding:20px; background-color:gray; width:1000px; z-index:4; }
         .PopContent .swiper-container { width:100%; height:100%; margin:0; }
         .PopContent .swiper-container .itemBox { float:left; width:50%; }
         .PopContent .swiper-container .description { float:left; width:50%; }
@@ -398,7 +376,7 @@
     </div>
 
 
-<!--
+
     
     <div class="outDiv Num4">
         <div class="InDiv">
@@ -431,87 +409,46 @@
 
         </div>
     </div>
--->
+
     <a class="btn_top" href="javascript:;">
         
     </a>     
 </body>
-</html>html>                            <!--oracle-->
-                            </div>
-                        </div>	
-                    </div>
-                    <div class="swiper-pagination" style=""></div>			                    
-                </div>
-                
+</html>l>ody>
+</html>              <div class="clear"></div>
+                </ul>
+            </div>
 
+        </div>
+    </div>
 
-                <script type="text/javascript">
-                    var skillSwiper = new Swiper(".Content>.swiper-container", { 
-						centeredSlides: true,
-						slidesPerView: 'auto',
-						spaceBetween: 0,
-						effect: 'slide',
-						loop: true,
-						//navigation: {
-						//	nextEl: '.swiper-button-next',
-						//	prevEl: '.swiper-button-prev',
-						//},
-						pagination: { el: '.swiper-pagination',
-							clickable: true,
-						},
-						autoplay: {
-							delay: 4000,
-							disableOnInteraction: false,
-						},
-                    });
-                </script>                
-                <!--
-                <ul>
+    <a class="btn_top" href="javascript:;">
+        
+    </a>     
+</body>
+</html>
+</html>
                     <li>
-                        <div class="AbilityBall">
-                            <div class="Ball">DDDD</div>
-                        </div>
-                        <div>
-
-                        </div>
+                        <div class="file bG4" onclick="fnPopLayer('4');"></div>
                     </li>
                     <li>
-                        <div class="AbilityBall">
-                            <div class="Ball">FFFFF</div>
-                        </div>
-                        <div>
-
-                        </div>
+                        <div class="file bG5" onclick="fnPopLayer('5');"></div>
                     </li>
                     <li>
-                        <div class="AbilityBall">
-                            <div class="Ball">GGGGG</div>
-                        </div>
-                        <div>
-
-                        </div>
+                        <div class="file bG6" onclick="fnPopLayer('6');"></div>                        
                     </li>
                     <div class="clear"></div>
                 </ul>
-                -->
             </div>
+
         </div>
     </div>
-    <div class="outDiv Num4">
-        <div class="InDiv">
-            <div class="Title">
-                My FFFFFF
-            </div>
-            <div class="Content">
-                <ul>
-                    <li>
-                        <div class="file bG1" onclick="fnPopLayer('1');"></div>
-                    </li>
-                    <li>
-                        <div class="file bG2" onclick="fnPopLayer('2');"></div>
-                    </li>
-                    <li>
-                        <div class="file bG3" onclick="fnPopLayer('3');"></div>                        
+
+    <a class="btn_top" href="javascript:;">
+        
+    </a>     
+</body>
+</html>  
                     </li>
                     <li>
                         <div class="file bG4" onclick="fnPopLayer('4');"></div>
@@ -533,4 +470,5 @@
         
     </a>     
 </body>
-</html>l>
+</html>
+</html>
