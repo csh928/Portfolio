@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -143,7 +144,15 @@
         }
     </style>
     <script type="text/javascript">
+        if (navigator.userAgent.indexOf('MSIE') > 0 || navigator.userAgent.indexOf('Trident') > 0) {
+            alert("internet Explorer");
+        }
+        else {
+            alert("Non Ie")
+        }
         $(document).ready(function(){
+
+
             $.fn.center = function () {		// 레이어팝업 센터 정렬
                 this.css("position","absolute");
                 this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
@@ -193,15 +202,19 @@
 
         function fnMakeSwipe(name, num)
         {
+            
             var html;
             html = '<div class="swiper-container">';
             html += ' <div class="swiper-wrapper">';
-            for (var i of eval(name + num))
+            //for (var i of eval(name + num))
+            for (var i = 0; i < eval(name + num).length; i++)
             {
                 html += '  <div class="swiper-slide">';
-                for (var j of i )
+                //for (var j of i )
+                for (var j = 0; j < eval(name + num)[i].length; j++)
                 {
-                    html += j;
+                    //alert(eval(name + num)[i][j]);
+                    html += eval(name + num)[i][j];
                 }
                 html += '  </div>';
             }
@@ -360,15 +373,14 @@
     <div class="outDiv Num1">
         <div class="InDiv">
             <div class="Title">
-                
+                <!--
                 <div class="S">ASDWQDASDASDASD</div>
                 <div class="M">MY</div>
                 <div class="L">ASDQWDWDS</div>
-               <!-- 
+                -->
                 <div class="S">Web Programmer</div>
                 <div class="M">MY</div>
                 <div class="L">PORTFOLIO</div>
--->
             </div>
         </div>
     </div>
@@ -460,4 +472,4 @@
         <img src="https://user-images.githubusercontent.com/61041001/83137548-4ebb1700-a124-11ea-99f6-5665bc21b4d0.png"/>            
     </a>     
 </body>
-</html>>
+</html>l>/html>
