@@ -29,23 +29,9 @@ $(document).ready(function(){
         var offNum;
         var pos = $(".outDiv.Num" + Mindex).offset().top;
         if (isMobile){
-            if (Mindex == 3) {
-                offNum = 120;
-            } else if (Mindex == 4) {
-                offNum = 10;
-            } else {
-                offNum = 200;
-            }
+            offNum = 100;
         } else {
-            if (Mindex == 2) {
-                offNum = 300;
-            } else if (Mindex == 3) {
-                offNum = 250;
-            } else if (Mindex == 4) {
-                offNum = 100;
-            } else {
-                offNum = 200;
-            }
+            offNum = 50;
         }
 
         $( 'html, body' ).animate( { scrollTop : pos - offNum }, 400 );
