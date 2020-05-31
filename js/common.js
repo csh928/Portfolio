@@ -29,11 +29,16 @@ $(document).ready(function(){
         var offNum;
         var pos = $(".outDiv.Num" + Mindex).offset().top;
         if (isMobile){
-            offNum = 100;
+            if (Mindex == 4 || Mindex == 5)
+            {
+                offNum = 50;
+            } else {
+                offNum = $(".outDiv.Num" + Mindex).innerHeight() / 2;
+            }
         } else {
             offNum = 50;
         }
-
+        alert(offNum);
         $( 'html, body' ).animate( { scrollTop : pos - offNum }, 400 );
     });
 
