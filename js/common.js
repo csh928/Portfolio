@@ -30,6 +30,7 @@ $(document).ready(function(){
         var pos = $(".outDiv.Num" + Mindex).offset().top;
         alert(isMobile);
         if (isMobile){
+            alert("모바일?" + isMobile);
             if (Mindex == 3) {
                 offNum = 120;
             } else if (Mindex == 4) {
@@ -38,7 +39,14 @@ $(document).ready(function(){
                 offNum = 200;
             }
         } else {
-            offNum = 100;
+            alert("PC?" + isMobile);
+            if (Mindex == 3) {
+                offNum = 160;
+            } else if (Mindex == 4) {
+                offNum = 10;
+            } else {
+                offNum = 200;
+            }
         }
 
         $( 'html, body' ).animate( { scrollTop : pos - offNum }, 400 );
