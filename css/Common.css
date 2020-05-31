@@ -31,7 +31,7 @@ select {-webkit-appearance: none; -moz-appearance:none; appearance:none;}
 select::-ms-expand { display:none; }
 
 .swiper-button-prev { width:48px !important; height:48px !important; background-size:100% !important; background-image:url(https://user-images.githubusercontent.com/61041001/83344891-dfbe0800-a347-11ea-9c0e-83f2cb78a0a2.png) !important; }
-.swiper-button-next { width:48px !important; height:48px !important; background-size:100% !important; background-image:url(https://user-images.githubusercontent.com/61041001/83344892-e0569e80-a347-11ea-9c72-374ff9d10cb0.png) !important;; }
+.swiper-button-next { width:48px !important; height:48px !important; background-size:100% !important; background-image:url(https://user-images.githubusercontent.com/61041001/83344892-e0569e80-a347-11ea-9c72-374ff9d10cb0.png) !important; }
 .swiper-pagination-bullet-active { background-color:#000000 !important; }
 .clear { clear:both; }
 
@@ -65,9 +65,9 @@ select::-ms-expand { display:none; }
 /*-3px -10px -3px 2px*/
 
 .outDiv.Num1 .InDiv .Title { padding:150px 100px 150px 100px; }
-.outDiv.Num1 .InDiv .Title .S { margin-bottom:14px; }
-.outDiv.Num1 .InDiv .Title .M { margin-bottom:14px; line-height:90%; font-size:60px; margin-bottom:360px; }
-.outDiv.Num1 .InDiv .Title .L { text-align:right; font-weight:600; font-size:60px; }
+.outDiv.Num1 .InDiv .Title .L { font-weight:600; font-size:60px; margin-bottom:360px; }
+.outDiv.Num1 .InDiv .Title .S { text-align:right; margin-bottom:14px; }
+.outDiv.Num1 .InDiv .Title .M { text-align:right; margin-bottom:14px; line-height:90%; font-size:60px; }
 
 
 .ImgDiv { float:left; padding:0 50px; }
@@ -140,25 +140,56 @@ select::-ms-expand { display:none; }
 .btn_top img { width:100%; height:100%; }
 
 @media (max-width:899px) {
+	.swiper-button-prev { width:2rem !important; height:2rem !important; background-size:100% !important; }
+	.swiper-button-next { width:2rem !important; height:2rem !important; background-size:100% !important; }
+
 	.outDiv .InDiv { width:100%; }
 	.outDiv .InDiv .TopMenu { width:100%; padding:1rem 0 0.25rem 0; }
-	.outDiv .InDiv .TopMenu .MLeft { width:100%; padding:0 0 0 0.5rem; font-size:0.75rem; margin-bottom:1rem; text-align:center; }
-	.outDiv .InDiv .TopMenu .MMid { width:60%; padding:0.5rem 0 0 0; float:none; }
+	.outDiv .InDiv .TopMenu .MLeft { width:100%; padding:0 0 0 0.5rem; font-size:1rem; margin-bottom:1rem; text-align:center; }
+	.outDiv .InDiv .TopMenu .MMid { width:60%; padding:0.5rem 0 0 0; font-size:1.25rem; float:none; }
 	.outDiv .InDiv .TopMenu .MRight { z-index: 9; width:100%; float:none; padding-bottom:0.5rem; }
-	.outDiv .InDiv .TopMenu .MRight li.Menu { width:20%; text-align:center; font-size:0.9rem; padding:0; margin:0; }
+	.outDiv .InDiv .TopMenu .MRight li.Menu { width:20%; text-align:center; font-size:0.85rem; padding:0; margin:0; }
 	.outDiv .InDiv .TopMenu .MRight li.Menu:nth-last-child(1) { margin:0; }
 	.outDiv .InDiv .TopMenu .MRight li.LiSelected { color:#000000; background-color: #ffffff; border-radius:3px; border:0; }
 
 	.outDiv.Num1 .InDiv .Title { padding:5rem 1rem; }
-	.outDiv.Num1 .InDiv .Title .S { margin-bottom:0.75rem; }
-	.outDiv.Num1 .InDiv .Title .M { font-size:2rem; }
-	.outDiv.Num1 .InDiv .Title .L { text-align:right; font-weight:600; font-size:2rem; }
+	.outDiv.Num1 .InDiv .Title .S { text-align:right; margin-bottom:0.75rem; }
+	.outDiv.Num1 .InDiv .Title .M { text-align:right; font-size:2rem; }
+	.outDiv.Num1 .InDiv .Title .L { font-weight:600; font-size:2rem; }
 
-	.outDiv.Num2 .InDiv { padding:5rem 0; }
+
 	.ImgDiv { width:100%; float:none; padding:0 50px; margin-bottom:1rem; }
 	.ImgDiv .testImg { width:10rem; height:10rem; margin:0 auto; }
 	.InfoDiv { width:100%; float:none; text-align:center; }
 
+	.outDiv.Num2 .InDiv, .outDiv.Num3 .InDiv, .outDiv.Num4 .InDiv{ padding:5rem 0; }
+	.outDiv.Num5 .InDiv { padding:10rem 0; }
+	.outDiv.Num2 .InDiv .Title, .outDiv.Num3 .InDiv .Title, .outDiv.Num4 .InDiv .Title, .outDiv.Num5 .InDiv .Title { font-weight:500; letter-spacing:0.125rem; margin-bottom:3rem; width:100%; text-align:center; font-size:2rem; }
+
+	.outDiv.Num2 .InDiv .About { font-size: 1rem; line-height:170%; text-align:center; margin-bottom:3rem;}
+	.outDiv.Num2 .InDiv .About span { font-family:'SCDL'; }
+
+	.outDiv.Num3 .InDiv .swiper-wrapper { padding:0 0 2rem 0; }
+	.outDiv.Num3 .InDiv .swiper-wrapper .swiper-slide { text-align:center; }
+	.outDiv.Num3 .InDiv .swiper-wrapper .swiper-slide .itemBox { position:relative; margin:0.5rem; display:inline-block; background-color:#ffffff; border-radius:50%; padding:0.25rem; width:6rem; height:6rem; background-size:50%; background-position:center; background-repeat: no-repeat; }
+	.outDiv.Num3 .InDiv .swiper-wrapper .swiper-slide .itemBox .point { font-size:0.75rem; position:absolute; bottom:0px; right:0px; width:2rem; height:2rem; background-color:#000000; text-align:center; color:#ffffff; line-height:2rem; border-radius:50%; }
+
+	.outDiv.Num3 .InDiv .swiper-button-prev, .outDiv.Num3 .InDiv .swiper-button-next { margin-top:0px; }
+
+	.outDiv.Num3 .InDiv .itemBox.Bg1 { background-image:url(https://user-images.githubusercontent.com/61041001/83019553-1f43d600-a062-11ea-93de-cfa85747ce05.png); }
+	.outDiv.Num3 .InDiv .itemBox.Bg2 { background-image:url(https://user-images.githubusercontent.com/61041001/83019554-1f43d600-a062-11ea-81d7-60c2eadfccf8.png); }
+	.outDiv.Num3 .InDiv .itemBox.Bg3 { background-image:url(https://user-images.githubusercontent.com/61041001/83140053-62687c80-a128-11ea-82fd-a6f0923c86d2.png); }
+	.outDiv.Num3 .InDiv .itemBox.Bg4 { background-image:url(https://user-images.githubusercontent.com/61041001/83019468-f6234580-a061-11ea-8024-2aa9c742842e.png); }
+	.outDiv.Num3 .InDiv .itemBox.Bg5 { background-image:url(https://user-images.githubusercontent.com/61041001/83019284-a3e22480-a061-11ea-987a-10988f309f04.png); }
+	.outDiv.Num3 .InDiv .itemBox.Bg6 { background-image:url(https://user-images.githubusercontent.com/61041001/83019552-1e12a900-a062-11ea-85ae-07b335aba148.png); }
+	.outDiv.Num3 .InDiv .itemBox.Bg7 { background-image:url(https://user-images.githubusercontent.com/61041001/83019557-1fdc6c80-a062-11ea-86b6-b9f9c240d98c.png); }
+
+	.outDiv.Num3 .InDiv .itemBox.Bg8 { background-image:url(https://user-images.githubusercontent.com/61041001/83140534-2f72b880-a129-11ea-9617-cc9fedff66d8.png); }
+	.outDiv.Num3 .InDiv .itemBox.Bg9 { background-image:url(https://user-images.githubusercontent.com/61041001/83140530-2da8f500-a129-11ea-9e36-5e5846e167c0.jpg); }
+	.outDiv.Num3 .InDiv .itemBox.Bg10 { background-image:url(https://user-images.githubusercontent.com/61041001/83140539-30a3e580-a129-11ea-8c62-3cae7e6f0ede.png); }
+	.outDiv.Num3 .InDiv .itemBox.Bg11 { background-image:url(https://user-images.githubusercontent.com/61041001/83140537-300b4f00-a129-11ea-8342-e0c8a7709c8f.png); }
+	.outDiv.Num3 .InDiv .itemBox.Bg12 { background-image:url(https://user-images.githubusercontent.com/61041001/83140536-300b4f00-a129-11ea-8103-c09399411a8e.png); }
+	.outDiv.Num3 .InDiv .itemBox.Bg13 { background-image:url(https://user-images.githubusercontent.com/61041001/83140533-2eda2200-a129-11ea-9400-02b487322416.png); }
 
 
 	.outDiv.Num4 .InDiv .Content li { width:50%; padding:0 0.5rem 0.5rem 0; }
@@ -166,13 +197,17 @@ select::-ms-expand { display:none; }
 	.outDiv.Num4 .InDiv .Content li:nth-child(2n) { padding:0 0 0.5rem 0; }
 	.outDiv.Num4 .InDiv .Content li .file { width:100%; height:12rem; background-color: mediumaquamarine; }
 
+	.outDiv.Num5 .InDiv .Contact { font-size: 1rem; line-height:160%; text-align:center; margin-bottom:5rem;}
+	.outDiv.Num5 .InDiv .Contact span { font-family:'SCDL'; }
+	.outDiv.Num5 .InDiv .Contact a { color:#000000; text-decoration: none; }
+
 	.DeContent { padding:0; }
 	.DeContent .swiper-container { width:100%; height:100%; margin:0; padding:0 0 30px 0; }
 
 	.DeContent .swiper-container .swiper-slide { margin:0 auto; }
 	.DeContent .swiper-container .swiper-slide .imgBox { width:100%; height:100%; overflow-y: scroll; }
 	.DeContent .swiper-container .swiper-slide .imgBox img { width:100%; }
-	.DeContent .swiper-container .swiper-slide .explain { border-radius:6px; padding:15px; position:absolute; top:20px; right:20px; color:#ffffff; background-color:#000000; opacity: 0.8; filter: alpha(opacity=80); -ms-filter: alpha(opacity=80); z-index: 3;}
+	.DeContent .swiper-container .swiper-slide .explain { font-size:1rem; border-radius:6px; padding:0.5rem; position:absolute; top:1rem; right:1rem; color:#ffffff; background-color:#000000; opacity: 0.8; filter: alpha(opacity=80); -ms-filter: alpha(opacity=80); z-index: 3;}
 	.DeContent .swiper-button-prev, .DeContent .swiper-button-next {  }
 
 	.DeContent .descript { width:100%; padding:0 0 0 30px; }
