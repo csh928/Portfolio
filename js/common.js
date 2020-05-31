@@ -32,7 +32,7 @@ $(document).ready(function(){
             {
                 offNum = 50;
             } else {
-                offNum = 0;
+                offNum = 200;
             }
         } else {
             offNum = 100;
