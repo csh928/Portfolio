@@ -7,9 +7,8 @@
     }
 */
 var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+
 $(document).ready(function(){
-
-
     $.fn.center = function () {		// 레이어팝업 센터 정렬
         this.css("position","absolute");
         this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
@@ -33,10 +32,10 @@ $(document).ready(function(){
             {
                 offNum = 50;
             } else {
-                offNum = $(".outDiv.Num" + Mindex).innerHeight() / 2;
+                offNum = 0;
             }
         } else {
-            offNum = 50;
+            offNum = 100;
         }
         alert(offNum);
         $( 'html, body' ).animate( { scrollTop : pos - offNum }, 400 );
@@ -48,6 +47,7 @@ $(document).ready(function(){
         $(".bg_layer,.PopContent").hide();
         $("body").css("overflow-y","scroll");
     });
+
 
     $( window ).scroll( function() {
         if ( $(this).scrollTop() > 100 ) {
