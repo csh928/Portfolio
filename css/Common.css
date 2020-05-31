@@ -41,11 +41,11 @@ select::-ms-expand { display:none; }
 
 /*.outDiv.MenuDiv.Fixed { position:fixed; background-color:#000000; z-index:2; }        */
 
-.outDiv.Num1 { background-color: red; padding-bottom:100px; padding-top:70px; }
+.outDiv.Num1 { background-color: #f4f4f4; padding-bottom:100px; padding-top:70px; }
 .outDiv.Num2 { background-color: #f4f4f4; padding-bottom:100px; }
-.outDiv.Num3 { background-color: red; padding-bottom:100px; }
+.outDiv.Num3 { background-color: #f4f4f4; padding-bottom:100px; }
 .outDiv.Num4 { background-color: #f4f4f4; padding-bottom:100px; }
-.outDiv.Num5 { background-color: red; padding-bottom:100px; }
+.outDiv.Num5 { background-color: #f4f4f4; padding-bottom:100px; }
 .outDiv .InDiv { width:1200px; margin:0 auto; position:relative; }
 .outDiv .InDiv .TopMenu { width:1200px; padding:40px 0 10px 0; }
 .outDiv .InDiv .TopMenu .MLeft { color:#ffffff; width:200px; padding:0 0 0 5px; float:left; font-weight:bold; }
@@ -155,7 +155,7 @@ select::-ms-expand { display:none; }
 	.outDiv.Num1 .InDiv .Title { padding:5rem 1rem; }
 	.outDiv.Num1 .InDiv .Title .S { text-align:right; margin-bottom:0.75rem; }
 	.outDiv.Num1 .InDiv .Title .M { text-align:right; font-size:2rem; }
-	.outDiv.Num1 .InDiv .Title .L { font-weight:600; font-size:2rem; margin-bottom:20rem; }
+	.outDiv.Num1 .InDiv .Title .L { font-weight:600; font-size:2rem; margin-bottom:18rem; }
 
 
 	.ImgDiv { width:100%; float:none; padding:0 50px; margin-bottom:1rem; }
