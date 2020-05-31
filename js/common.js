@@ -27,17 +27,7 @@ $(document).ready(function(){
         var Mindex = $(this).index() + 1;
         var offNum;
         var pos = $(".outDiv.Num" + Mindex).find(".Title").offset().top;
-        if (isMobile){
-            if (Mindex == 4 || Mindex == 5)
-            {
-                offNum = 100;
-            } else {
-                offNum = 200;
-            }
-        } else {
-            offNum = 100;
-        }
-        $( 'html, body' ).animate( { scrollTop : pos - offNum }, 400 );
+        $( 'html, body' ).animate( { scrollTop : pos - 100 }, 400 );
     });
 
 
