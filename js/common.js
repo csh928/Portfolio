@@ -28,9 +28,7 @@ $(document).ready(function(){
         var Mindex = $(this).index() + 1;
         var offNum;
         var pos = $(".outDiv.Num" + Mindex).offset().top;
-        alert(isMobile);
         if (isMobile){
-            alert("모바일?" + isMobile);
             if (Mindex == 3) {
                 offNum = 120;
             } else if (Mindex == 4) {
@@ -39,11 +37,12 @@ $(document).ready(function(){
                 offNum = 200;
             }
         } else {
-            alert("PC?" + isMobile);
-            if (Mindex == 3) {
-                offNum = 160;
+            if (Mindex == 2) {
+                offNum = 300;
+            } else if (Mindex == 3) {
+                offNum = 250;
             } else if (Mindex == 4) {
-                offNum = 10;
+                offNum = 100;
             } else {
                 offNum = 200;
             }
