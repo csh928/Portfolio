@@ -6,6 +6,7 @@
         alert("Non Ie")
     }
 */
+var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
 $(document).ready(function(){
 
 
@@ -25,9 +26,21 @@ $(document).ready(function(){
             history.back(-1);
         };
         var Mindex = $(this).index() + 1;
-        var pos = $(".outDiv.Num" + Mindex).offset().top - 200;
+        var offNum;
+        var pos = $(".outDiv.Num" + Mindex).offset().top;
+        if (isMobile){
+            if (Mindex == 3) {
+                offNum = 150;
+            } else if (Mindex == 4) {
+                offNum = 10;
+            } else {
+                offNum = 200;
+            }
+        } else {
+            offNum = 100;
+        }
 
-        $( 'html, body' ).animate( { scrollTop : pos }, 400 );
+        $( 'html, body' ).animate( { scrollTop : pos - offNum }, 400 );
     });
 
 
