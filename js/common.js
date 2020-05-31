@@ -28,6 +28,7 @@ $(document).ready(function(){
         var Mindex = $(this).index() + 1;
         var offNum;
         var pos = $(".outDiv.Num" + Mindex).offset().top;
+        alert(isMobile);
         if (isMobile){
             if (Mindex == 3) {
                 offNum = 120;
