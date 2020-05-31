@@ -155,7 +155,7 @@ select::-ms-expand { display:none; }
 	.outDiv.Num1 .InDiv .Title { padding:5rem 1rem; }
 	.outDiv.Num1 .InDiv .Title .S { text-align:right; margin-bottom:0.75rem; }
 	.outDiv.Num1 .InDiv .Title .M { text-align:right; font-size:2rem; }
-	.outDiv.Num1 .InDiv .Title .L { font-weight:600; font-size:2rem; margin-bottom:15rem; }
+	.outDiv.Num1 .InDiv .Title .L { font-weight:600; font-size:2rem; margin-bottom:24rem; }
 
 
 	.ImgDiv { width:100%; float:none; padding:0 50px; margin-bottom:1rem; }
