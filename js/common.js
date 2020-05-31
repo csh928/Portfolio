@@ -30,7 +30,7 @@ $(document).ready(function(){
         var pos = $(".outDiv.Num" + Mindex).offset().top;
         if (isMobile){
             if (Mindex == 3) {
-                offNum = 150;
+                offNum = 120;
             } else if (Mindex == 4) {
                 offNum = 10;
             } else {
