@@ -30,14 +30,13 @@ $(document).ready(function(){
         if (isMobile){
             if (Mindex == 4 || Mindex == 5)
             {
-                offNum = 50;
+                offNum = 100;
             } else {
                 offNum = 200;
             }
         } else {
             offNum = 100;
         }
-        alert(offNum);
         $( 'html, body' ).animate( { scrollTop : pos - offNum }, 400 );
     });
 
