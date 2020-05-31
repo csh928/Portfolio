@@ -27,7 +27,7 @@ $(document).ready(function(){
         };
         var Mindex = $(this).index() + 1;
         var offNum;
-        var pos = $(".outDiv.Num" + Mindex).offset().top;
+        var pos = $(".outDiv.Num" + Mindex).find("Title").offset().top;
         if (isMobile){
             if (Mindex == 4 || Mindex == 5)
             {
