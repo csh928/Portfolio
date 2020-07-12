@@ -1,6 +1,6 @@
 var SkillContent = [
     ["<div class='itemBox Bg1'><div class='point'>90%</div></div>","<div class='itemBox Bg2'><div class='point'>85%</div></div>","<div class='itemBox Bg3'><div class='point'>90%</div></div>","<div class='itemBox Bg4'><div class='point'>95%</div></div>","<div class='itemBox Bg5'><div class='point'>95%</div></div>","<div class='itemBox Bg6'><div class='point'>90%</div></div>","<div class='itemBox Bg7'><div class='point'>85%</div></div>"],
-    ["<div class='itemBox Bg8'><div class='point'>70%</div></div>","<div class='itemBox Bg9'><div class='point'>60%</div></div>","<div class='itemBox Bg10'><div class='point'>10%</div></div>","<div class='itemBox Bg11'><div class='point'>30%</div></div>","<div class='itemBox Bg12'><div class='point'>35%</div></div>","<div class='itemBox Bg13'><div class='point'>15%</div></div>"]
+    ["<div class='itemBox Bg8'><div class='point'>70%</div></div>","<div class='itemBox Bg9'><div class='point'>60%</div></div>","<div class='itemBox Bg10'><div class='point'>10%</div></div>","<div class='itemBox Bg11'><div class='point'>30%</div></div>","<div class='itemBox Bg12'><div class='point'>35%</div></div>","<div class='itemBox Bg13'><div class='point'>15%</div></div>","<div class='itemBox Bg14'><div class='point'>35%</div></div>"]
 ];
 
 var imgPath = "https://user-images.githubusercontent.com/61041001/";
