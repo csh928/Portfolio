@@ -19,7 +19,7 @@
         function searchParam(key) {
             return new URLSearchParams(location.search).get(key);
         };
-*/
+        */
         function getUrlParams() {
             var params = {};
             window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) { params[key] = value; });
