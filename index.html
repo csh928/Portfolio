@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -8,16 +8,17 @@
     <meta property="og:title" content="Portfolio site of Cha Sunghwan, Web Developer.">
     <meta property="og:image" content="https://user-images.githubusercontent.com/61041001/83352654-0e5bd300-a388-11ea-8af1-6797c7ac9f93.jpg">
     <meta property="og:url" content="https://csh928.github.io/Portfolio/">
-    <link rel="stylesheet" href="https://csh928.github.io/Portfolio/css/Common.css?v=2" type="text/css">
+    <link rel="stylesheet" href="https://csh928.github.io/Portfolio/css/Common.css" type="text/css">
     <link rel="stylesheet" href="https://csh928.github.io/Portfolio/css/swiper.min.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://csh928.github.io/Portfolio/js/swiper.min.js" type="text/javascript"></script>
     <script src="https://csh928.github.io/Portfolio/js/contents.js"></script>
-    <script src="https://csh928.github.io/Portfolio/js/common.js?v=3"></script>
+    <script src="https://csh928.github.io/Portfolio/js/common.js"></script>
     <script type="text/javascript">
         function fnGoDetail(num)
         {
-            location.href="https://csh928.github.io/Portfolio/detail/?id=" + num;
+            // location.href="https://csh928.github.io/Portfolio/detail/?id=" + num;
+            location.href="./detail/index.html?id=" + num;
         }
     </script>
 </head>
@@ -64,10 +65,10 @@
             <div class="About">
                 <span>
                     반갑습니다.</br>
-                    Developer 4 years</br>
-                    디자인 중심으로 운영 되는 웹 쇼핑몰에서</br>
-                    기획, 디자인, MD 와의 협업을 통해 성장하고</br>
-                    프론트 엔드 / 백 엔드를 아우를 수 있는 </br>
+                    Developer 7 years</br>
+                    웹 온라인 쇼핑몰에서</br>
+                    다양한 기술스택을 사용하며 성장하고</br>
+                    서버 / SQL / 프론트 엔드 / 백 엔드를 아우를 수 있는 </br>
                     개발자입니다.
                 </span>
             </div>
@@ -91,6 +92,12 @@
             </div>
             <div class="Content">
                 <ul>
+                    <li class="two">
+                        <div class="file" onclick="fnGoDetail('7');">신성통상 온라인몰 차세대 프로젝트</div>
+                    </li>
+                    <li class="two">
+                        <div class="file" onclick="fnGoDetail('8');">신세계 까사 온라인몰 개발 및 운영</div>
+                    </li>
                     <li>
                         <div class="file bG1" onclick="fnGoDetail('1');"></div>
                     </li>
