@@ -1,4 +1,5 @@
 var SkillContent = [
+    ["<div class='itemBox Bg15'><div class='point'>70%</div></div>","<div class='itemBox Bg16'><div class='point'>85%</div></div>","<div class='itemBox Bg17'><div class='point'>90%</div></div>","<div class='itemBox Bg18'><div class='point'>80%</div></div>","<div class='itemBox Bg19'><div class='point'>50%</div></div>","<div class='itemBox Bg20'><div class='point'>85%</div></div>"],
     ["<div class='itemBox Bg1'><div class='point'>90%</div></div>","<div class='itemBox Bg2'><div class='point'>85%</div></div>","<div class='itemBox Bg3'><div class='point'>90%</div></div>","<div class='itemBox Bg4'><div class='point'>95%</div></div>","<div class='itemBox Bg5'><div class='point'>95%</div></div>","<div class='itemBox Bg6'><div class='point'>90%</div></div>","<div class='itemBox Bg7'><div class='point'>85%</div></div>"],
     ["<div class='itemBox Bg8'><div class='point'>70%</div></div>","<div class='itemBox Bg9'><div class='point'>60%</div></div>","<div class='itemBox Bg10'><div class='point'>10%</div></div>","<div class='itemBox Bg11'><div class='point'>30%</div></div>","<div class='itemBox Bg12'><div class='point'>35%</div></div>","<div class='itemBox Bg13'><div class='point'>15%</div></div>","<div class='itemBox Bg14'><div class='point'>35%</div></div>"]
 ];
@@ -66,4 +67,28 @@ var PopContent6 = [
     ['<div class="imgBox"><img src="'+imgPath+'83344343-55be7100-a340-11ea-822d-9a415916763a.jpg"></div>','<div class="explain"><span>일정 확률로 이벤트 당첨 프로세서 적용</span></br>[ Jquery, Javascript, Asp, Ajax, Oracle ]</div>'],
     ['<div class="imgBox"><img src="'+imgPath+'83344365-9322fe80-a340-11ea-9499-41b1c64f7bd8.jpg"></div>','<div class="explain"><span>출석체크 일정 확률로 마일리지 제공</br>전광판 효과</span></br>[ Jquery, Javascript, MarqueeAPI, Ajax, Oracle ]</div>'],
     ['<div class="imgBox"><img src="'+imgPath+'83344377-cd8c9b80-a340-11ea-83cf-21c5bed795b9.jpg"></div>','<div class="explain"><span>매장정보</span></br>[ Jquery, Javascript, NaverMapAPI, Oracle ]</div>'],
+];
+
+var PopTitle7 = "신성통상 온라인몰 차세대 프로젝트";
+var PopContent7 = [
+    ['','<div class="explainTxt">' +
+        '<div><span class="subject">커뮤니티 서비스</span></br>- 특정 회원들의 사진, 관련 상품, 내용 등 커뮤니티성 글을 작성</br>- 주문내역 / 위시리스트 / 검색 탭을 이용한 관련 상품 선택</br>- 신고하기 기능으로 내가 신고한 글은 리스트 비노출</br>- 좋아요 버튼을 통한 포인트 지급과 좋아요 갯수를 기반으로 HOT한 게시글 계산 및 노출</br>- 커뮤니티 내 활동을 기반으로 포인트, 쿠폰 제공 기능 개발</br>- 실시간 게시글 제공 및 회원별 게시글 몰아보기 제공</br>- 백 오피스를 통한 베스트 글 선정 및 리스트 조회, 상태 변경 기능 제공</div>' +
+        '<div><span class="subject">임직원 신청</span></br>- 임직원 신청 페이지를 통해 회원정보 검증</br>- 임직원 인터페이스와 임직원 신청 데이터 검증</br>- 회원 정보를 임직원 정보로 업데이트 개발</div>' +
+        '<div><span class="subject">080 수신거부 서비스</span></br>- LG 080 수신거부 API 정보를 수신</br>- 해당 회원 정보의 수신거부 업데이트 개발</div>' +
+        '<div><span class="subject">계좌 조회 / 관리 서비스</span></br>- 토스 API와 연동하여 본인 인증</br>- 실계좌 검증 및 환불계좌 관리 개발</div>' +
+    '</div>']
+];
+
+
+var PopTitle8 = "신세계 까사 온라인몰 개발 및 운영";
+var PopContent8 = [
+    ['','<div class="explainTxt">' +
+    '<div><span class="subject">할인모니터링 시스템</span></br>- 일 배치성으로 까사미아 굳닷컴 내 전체 상품의 할인율, 할인금액을 계산하여 전날 데이터와 비교, 가격 이상이 있는 상품들의 정보를 블라썸 톡으로 전달, 어드민상 조회 화면에서 품절처리</div>' +
+    '<div><span class="subject">굿스플로우 재연동</span></br>- 주문 배송 송장 등록 후 송장 번호 변경으로 인한 배송 정보 업데이트가 가능 하도록 개선 개발</div>' +
+    '<div><span class="subject">이미지 프로세싱 변경</span></br>- 상품 등록시 고객사 요구에 따른 이미지 프로세싱 변경 및 이미지 변환 크기 기존 4개 -> 7개 로 변경, 기존 상품 이미지 변환을 위한 API 개발 및 변경 진행, FO 표시되는 이미지 변경 개발</div>' +
+    '<div><span class="subject">고객의 소리</span></br>- FO에서 접수된 대고객 CS에 대한 어드민 개발, 리스트, 상세화면에서 분류, 상태, 답변 내용(에디터), 파일 첨부, 답변 방식에 따른 SMS, 이메일 발송 시스템 개발</div>' +
+    '<div><span class="subject">조회 속도 개선</span></br>- FO에서 실행되는 기능 중 속도가 느린 서비스에 대해 쿼리 수정으로 인한 속도 개선</div>' +
+    '<div><span class="subject">모의 해킹 관련 조치</span></br>- 주문상세보기에서 OD_ORDER_ID 변조로 다른 주문정보(할인, 결제) response 되는 현상 방지 (보완 : 셀렉시 기존 OD_ORDER_ID -> 변경 OD_ORDER_ID, UR_USER_ID)</br>- 주문상세보기에서 배송지변경시 OD_ORDER_ID 변조로 다른 주문 배송지 변경되는 현상 방지 (보완 : 배송지 변경 프로세스 전 OD_ORDER_ID와 ODID로 실제주문 더블체크)</div>' +
+    '<div><span class="subject">운영 업무</span></br>- 소스 머지 및 운영/스테이징 배포</br>- 리눅스 서버 CronTab을 활용한 web / was 로그 관리 최적화 적용</br>- 각종 CS 문의 건 파악 및 개선 사항 개발 / 적용</div>' +
+    '</div>']
 ];
