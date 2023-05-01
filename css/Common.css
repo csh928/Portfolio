@@ -104,10 +104,16 @@ select::-ms-expand { display:none; }
 .outDiv.Num3 .InDiv .itemBox.Bg13 { background-image:url(https://user-images.githubusercontent.com/61041001/83140533-2eda2200-a129-11ea-9400-02b487322416.png); }
 .outDiv.Num3 .InDiv .itemBox.Bg14 { background-image:url(https://user-images.githubusercontent.com/61041001/87238783-fb85f500-c441-11ea-86bd-806d50041bd5.png); }
 
-.outDiv.Num4 .InDiv .Content li { width:33.3%; padding:0 20px 20px 0; }
-.outDiv.Num4 .InDiv .Content li:nth-child(3n) { padding:0 0 20px 0; }
+.outDiv.Num3 .InDiv .itemBox.Bg15 { background-image:url(https://user-images.githubusercontent.com/61041001/235427245-229342b6-7e72-457b-9a1e-88687fb62484.png); }
+.outDiv.Num3 .InDiv .itemBox.Bg16 { background-image:url(https://user-images.githubusercontent.com/61041001/235427579-e3a972be-bd71-401f-92a1-b57bdedf6c00.png); }
+.outDiv.Num3 .InDiv .itemBox.Bg17 { background-image:url(https://user-images.githubusercontent.com/61041001/235427581-a3d3b6f1-2628-4625-bdd7-5c95f0fa0b9b.png); }
+.outDiv.Num3 .InDiv .itemBox.Bg18 { background-image:url(https://user-images.githubusercontent.com/61041001/235427585-9b4b7027-7cac-4856-b2b8-d1b0e15b793e.png); }
+.outDiv.Num3 .InDiv .itemBox.Bg19 { background-image:url(https://user-images.githubusercontent.com/61041001/235427591-21f76528-6fa8-4322-b365-faedc2762c7d.png); }
+.outDiv.Num3 .InDiv .itemBox.Bg20 { background-image:url(https://user-images.githubusercontent.com/61041001/235428931-b1a5a2b1-d30c-42c1-8bb9-c47ec8ee74df.png); }
 
-.outDiv.Num4 .InDiv .Content li .file { cursor:pointer; width:100%; height:400px; background-size:100% auto; background-position:center top; background-repeat: no-repeat; }
+.outDiv.Num4 .InDiv .Content li { width:33.3%; padding:0 10px 20px 10px; }
+.outDiv.Num4 .InDiv .Content li.two { width:50%; }
+.outDiv.Num4 .InDiv .Content li .file { cursor:pointer; width:100%; height:400px; background-size:100% auto; background-position:center top; background-repeat: no-repeat; vertical-align: middle; text-align: center; line-height:400px; font-size:1.5rem; background-color:#ffffff; opacity: 0.8; filter: alpha(opacity=80); -ms-filter: alpha(opacity=80); border-radius: 20px;font-family: 'SCDL';}
 
 .outDiv.Num4 .InDiv .Content li .file.bG1 { background-image:url(https://user-images.githubusercontent.com/61041001/83326601-4b549680-a2b0-11ea-8adf-bc46986ac84c.jpg); }
 .outDiv.Num4 .InDiv .Content li .file.bG2 { background-image:url(https://user-images.githubusercontent.com/61041001/83343368-5d781880-a334-11ea-83f0-372081da2af7.jpg); }
@@ -129,6 +135,9 @@ select::-ms-expand { display:none; }
 .DeContent .swiper-container .swiper-slide .imgBox img { width:100%; }
 .DeContent .swiper-container .swiper-slide .explain { text-align:right; line-height:20px; border-radius:6px; padding:15px; position:absolute; top:20px; right:20px; color:#ffffff; background-color:#000000; opacity: 0.8; filter: alpha(opacity=80); -ms-filter: alpha(opacity=80); z-index: 3;}
 .DeContent .swiper-container .swiper-slide .explain span { font-family:'SCDL'; }
+.DeContent .swiper-container .swiper-slide .explainTxt { width:100%; height:100%; border-radius:6px; padding:50px; background-color:#000000; opacity: 0.5; filter: alpha(opacity=50); -ms-filter: alpha(opacity=50); z-index: 3;}
+.DeContent .swiper-container .swiper-slide .explainTxt div { font-family:'SCDL'; text-align:left; line-height:30px; color:#ffffff; margin-bottom:50px; }
+.DeContent .swiper-container .swiper-slide .explainTxt div .subject { font-weight: bold; font-size:1.2rem; font-family:'SCDH'; }
 
 
 .DeContent .descript { width:100%; padding:0 0 0 30px; }
@@ -197,10 +206,8 @@ select::-ms-expand { display:none; }
 	.outDiv.Num3 .InDiv .itemBox.Bg13 { background-image:url(https://user-images.githubusercontent.com/61041001/83140533-2eda2200-a129-11ea-9400-02b487322416.png); }
 
 
-	.outDiv.Num4 .InDiv .Content li { width:50%; padding:0 0.5rem 0.5rem 0; }
-	.outDiv.Num4 .InDiv .Content li:nth-child(3n) { padding:0 0.5rem 0.5rem 0; }
-	.outDiv.Num4 .InDiv .Content li:nth-child(2n) { padding:0 0 0.5rem 0; }
-	.outDiv.Num4 .InDiv .Content li .file { width:100%; height:12rem; background-color: mediumaquamarine; }
+	.outDiv.Num4 .InDiv .Content li { width:50%; padding:0 0.25rem 0.5rem 0.25rem; }
+	.outDiv.Num4 .InDiv .Content li .file { width:100%; height:12rem; line-height:12rem; font-size:0.7rem; }
 
 	.outDiv.Num5 .InDiv .Contact { font-size: 1rem; line-height:160%; text-align:center; margin-bottom:5rem;}
 	.outDiv.Num5 .InDiv .Contact span { font-family:'SCDL'; }
@@ -213,6 +220,9 @@ select::-ms-expand { display:none; }
 	.DeContent .swiper-container .swiper-slide .imgBox { width:100%; height:100%; overflow-y: scroll; }
 	.DeContent .swiper-container .swiper-slide .imgBox img { width:100%; }
 	.DeContent .swiper-container .swiper-slide .explain { font-size:1rem; border-radius:6px; padding:0.5rem; position:absolute; top:1rem; right:1rem; color:#ffffff; background-color:#000000; opacity: 0.8; filter: alpha(opacity=80); -ms-filter: alpha(opacity=80); z-index: 3;}
+	.DeContent .swiper-container .swiper-slide .explainTxt { width:100%; height:100%; border-radius:0px; padding:2rem; overflow-y: scroll; }
+	.DeContent .swiper-container .swiper-slide .explainTxt div { font-family:'SCDL'; text-align:left; line-height:1.5rem; color:#ffffff; margin-bottom:2rem; }
+	.DeContent .swiper-container .swiper-slide .explainTxt div .subject { font-weight: bold; font-size:1rem; }
 	.DeContent .swiper-button-prev, .DeContent .swiper-button-next {  }
 
 	.DeContent .descript { width:100%; padding:0 0 0 30px; }
